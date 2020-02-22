@@ -41,7 +41,7 @@ function showMouse() { // ! gak perlu pake parameter tanah lagi karena langsung 
     // ? ambil dari randwomEarth. YG masuk ke earthRandom udah pasti elemennya
     const earthRandom = randomEarth(tanah);
     // * Variabel untuk randomTime
-    const wRandom = timeRandom(300, 1000); // ? dari 300 detik sampai 1500 detik
+    const wRandom = timeRandom(300, 1000); // ? dari 300 detik sampai 1000 detik
     // * Memunculkan tikusnya. Tapi harus random, maka buat dulu function untuk membuat angka random
     earthRandom.classList.add('muncul');
     // ? Tikusnya hilang setelah setengah detik misal
@@ -66,7 +66,7 @@ function start() {
     // todo setiap 10 detik maka akan berhenti dan selesai permainan
     setTimeout(() => {
         finish = true;
-    }, 3000);
+    }, 3000); // ? selama 3000 detik
 }
 
 // ? Untuk mukul tikusnya
